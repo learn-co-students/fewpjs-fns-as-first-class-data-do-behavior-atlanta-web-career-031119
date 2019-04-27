@@ -9,19 +9,19 @@ function handleClick(e) {
 
 /* Write your implementation of greet() */
 function greet(hr) {
+  
   if (hr[0]+hr[1] < 12) {
-    return 'Morning'
+    return 'Good Morning'
   }
   else if (hr[0]+hr[1] > 16) {
-    return 'Evening'
+    return 'Good Evening'
   }
   else {
-    return 'Afternoon'
+    return 'Good Afternoon'
   }
 }
 
 /* Write your implementation of displayMessage() */
 function displayMessage(response) {
-  console.log(`Good ${response}`)
-  return `Good ${response}`
+  document.getElementById('greeting').innerText = response
 }
